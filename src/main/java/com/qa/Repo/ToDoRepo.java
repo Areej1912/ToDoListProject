@@ -8,7 +8,7 @@ import com.qa.entity.ToDoItem;
 
 public interface ToDoRepo extends JpaRepository<ToDoItem, Long> {
 
-	List<ToDoItem> findByName(String name);
-	List<ToDoItem>findByPublished(boolean published);
+	List<ToDoItem>findByName(String name);
+	List<ToDoItem>findByComplete(boolean complete);
 	
 }
