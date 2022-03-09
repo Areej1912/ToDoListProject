@@ -1,5 +1,9 @@
 package com.qa.Repo;
 
-public class ToDoRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.qa.entity.ToDoItem;
+
+public interface ToDoRepo extends JpaRepository<ToDoItem, Long> {
 
 }
