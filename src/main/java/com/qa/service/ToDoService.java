@@ -1,5 +1,7 @@
 package com.qa.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.qa.Repo.ToDoRepo;
@@ -28,8 +30,19 @@ public class ToDoService {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
+
+
+	public List<ToDoItem> getALLToDoItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public ToDoItem getToDoItemById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 	
 }

@@ -1,8 +1,11 @@
 package com.qa.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -45,5 +48,22 @@ public class ToDoListcontroller {
 		
 	}
 
+	@GetMapping("/getALL")
+	public ResponseEntity<List<ToDoItem>> getALLToDoItems(){
+		return new ResponseEntity<List<ToDoItem>>(this.service.getALLToDoItems(),HttpStatus.OK);
+		
+		
+	}
+
+	@GetMapping("/getbyId/{id}")
+	public ResponseEntity<ToDoItem> getToDoItemById(@PathVariable Long id) {
+		return new ResponseEntity<ToDoItem>(this.service.getToDoItemById(id), HttpStatus.OK);
+	}
+	
+	
+
+	
+	
+	
 	
 }
