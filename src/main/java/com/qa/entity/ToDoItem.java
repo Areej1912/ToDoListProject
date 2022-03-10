@@ -1,5 +1,6 @@
 package com.qa.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,7 +14,9 @@ public class ToDoItem {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.AUTO) 
 	private Long id;
+	@Column 
 	private String name; 
+	@Column
 	private boolean complete;
 
 	public ToDoItem() {}
