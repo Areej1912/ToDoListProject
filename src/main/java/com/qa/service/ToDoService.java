@@ -1,9 +1,5 @@
 package com.qa.service;
 
-<<<<<<< Updated upstream
-public class ToDoService {
-
-=======
 import java.util.List;
 import java.util.Optional;
 
@@ -21,13 +17,10 @@ public class ToDoService {
 
 	private ToDoRepo repo;
 
-	@Autowired 
+	@Autowired
 	public ToDoService(ToDoRepo repo) {
-		this.repo = repo;
+		this.repo= repo;
 	}
-	
-	
-	
 	
 	public ToDoItem createToDoItem(ToDoItem todoitem) {
 	
@@ -67,5 +60,4 @@ public class ToDoService {
 		return this.repo.save(foundToDoItem);
 	}
 	
->>>>>>> Stashed changes
 }

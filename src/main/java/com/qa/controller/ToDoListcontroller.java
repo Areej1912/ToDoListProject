@@ -1,10 +1,7 @@
 package com.qa.controller;
 
-<<<<<<< Updated upstream
-=======
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,19 +10,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
->>>>>>> Stashed changes
 import org.springframework.web.bind.annotation.RestController;
+
+
+import com.qa.service.ToDoService;
+import com.qa.entity.ToDoItem;
+
+
 
 @RestController 
 public class ToDoListcontroller {
 
-<<<<<<< Updated upstream
-	
-=======
-	private ToDoService service;
-	@Autowired
-	 public ToDoListcontroller(ToDoService service) {
-		
+	private ToDoService service; {
 		this.service= service; 
 		
 	}
@@ -64,7 +60,6 @@ public class ToDoListcontroller {
 		return new ResponseEntity<ToDoItem>(this.service.getToDoItemById(id), HttpStatus.OK);
 	}
 	
-	
->>>>>>> Stashed changes
+
 	
 }
