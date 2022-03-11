@@ -65,14 +65,14 @@ public class ToDoServiceUnitTest {
 	@Test
 	void updateToDoItem() {
 		Long id= (long) 1;
-		ToDoItem savedToDoItem = new ToDoItem(1L, "Buy Present", true);
-		ToDoItem updatingToDoItem = new ToDoItem(null, "Buy Present", true);
-		ToDoItem updatedToDoItem = new ToDoItem(1L, "Buy Present", true);
+		ToDoItem savedToDoItem = new ToDoItem((long) 1, "Buy Present", true);
+		ToDoItem updatingToDoItem = new ToDoItem(null, "Buy present", false);
+		ToDoItem updatedToDoItem = new ToDoItem((long) 1, "Buy Present", false);
 		Mockito.when(this.repo.findById(id)).thenReturn(Optional.of(savedToDoItem));
 		Mockito.when(this.repo.save(updatedToDoItem)).thenReturn(updatedToDoItem);
 		assertThat(this.service.updateToDoItem(id, updatingToDoItem)).isEqualTo(updatedToDoItem);
 		Mockito.verify(this.repo, Mockito.times(1)).findById(Mockito.anyLong());
 		Mockito.verify(this.repo, Mockito.times(1)).save(Mockito.any(ToDoItem.class));
 	}
-	
 }
+

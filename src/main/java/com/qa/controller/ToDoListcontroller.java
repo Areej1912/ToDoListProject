@@ -2,6 +2,7 @@ package com.qa.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -22,10 +23,16 @@ import com.qa.entity.ToDoItem;
 @RestController 
 public class ToDoListcontroller {
 
-	private ToDoService service; {
+	private ToDoService service;
+	
+	@Autowired
+	public ToDoListcontroller(ToDoService service) {
+	
+		super();
 		this.service= service; 
-		
 	}
+		
+	
 	
 	@PostMapping("/create")
 	public ResponseEntity<ToDoItem>createToDoItem(@RequestBody ToDoItem todoitem) {
@@ -60,6 +67,7 @@ public class ToDoListcontroller {
 	public ResponseEntity<ToDoItem> getToDoItemById(@PathVariable Long id) {
 		return new ResponseEntity<ToDoItem>(this.service.getToDoItemById(id), HttpStatus.OK);
 	}
+	
 	
 
 	
