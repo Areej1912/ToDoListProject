@@ -1,6 +1,7 @@
 # TO DO LIST APP- MY FINAL PROJECT FOR THE QA SOFTWARE DEVELOPMENT BOOTCAMP
 
 **- Why are we doing this?**
+
 To showcase all the topics covered and learned throughout the QA Software Development Bootcamp. Topics such as Java programming, working with databases, API development, testing etc
 
 **- How I expected the challenge to go**
