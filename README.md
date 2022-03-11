@@ -11,6 +11,8 @@ I expected the challenge to go reasonably well, as I have been working hard thro
 
 I was able to write the code for CRUD functionalities, so the java programming aspect of the project went well. However, mysql refused to work with me, so I was unable to connect to a database, which impacted a lot of my project. my h2 console kept getting error messages. I spent a lot of time trying to fix problems that would keep persisting. 
 I was also able to conduct a service unit test. 
+![Screenshot 2022-03-11 at 13 57 49](https://user-images.githubusercontent.com/97736441/157881857-73d3a478-8332-4b7a-8885-cf82b6a2b7db.png)
+^This shows that my application has started and is running but wont connect to my h2-console. 
 
 **- Possible improvements for future revisions of the project.**
 
