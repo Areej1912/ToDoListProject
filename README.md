@@ -25,3 +25,42 @@ Will be working on this project after course anyway, and will hopefully be able 
 
 **- Link to Jira Board - You must add your trainer(s) as collaborators also.**
 https://areejqa.atlassian.net/jira/software/projects/TDL/boards/2/roadmap?selectedIssue=TDL-1 
+
+**RISK ASSESSMENT**
+Risk 1: To Do Item not found through ID
+
+Likelihood: Medium
+
+Level of Impact: Medium
+
+Response: Create a function to find To Do Item by listing all items
+
+Control measure: use /getALL
+
+Risk 2: Not completing project by deadline
+
+Likelihood: Medium
+
+Level of Impact: High
+
+Response: Set small deadlines leading up to final deadline
+
+Risk 3: App does not function
+
+Likelihood: Medium
+
+Level of Impact: High
+
+Response: Create unit tests to figure out problem
+
+Control measure: Undertaking tests 
+
+Risk 4: Procrastination
+
+Likelihood: Medium
+
+Level of Impact: High
+
+Response: Take breaks in between instead of working for hours
+
+Control measure: set small deadlines
